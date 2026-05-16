@@ -1,0 +1,24 @@
+{
+  "name": "build-failure-theater",
+  "version": "0.1.0",
+  "description": "Animated SVG README widget for GitHub Actions drama.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "keywords": [
+    "github-actions",
+    "readme",
+    "svg",
+    "badge",
+    "cloudflare-worker"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.18.0"
+  }
+}

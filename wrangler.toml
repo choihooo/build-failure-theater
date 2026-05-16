@@ -1,0 +1,7 @@
+name = "build-failure-theater"
+main = "src/worker.js"
+compatibility_date = "2026-05-16"
+
+routes = [
+  { pattern = "build-failure-theater.hozorica.com", custom_domain = true }
+]
