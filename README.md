@@ -42,3 +42,22 @@ GET /:owner/:repo.svg
 ```
 
 For higher GitHub API limits, set `GITHUB_TOKEN` in the Worker environment.
+
+## Deploy
+
+The included Worker config targets:
+
+```txt
+build-failure-theater.hozorica.com
+```
+
+Deploy locally:
+
+```bash
+CLOUDFLARE_API_TOKEN=... npm run deploy
+```
+
+Deploy from GitHub Actions by setting:
+
+- repository variable `CLOUDFLARE_ACCOUNT_ID`
+- repository secret `CLOUDFLARE_API_TOKEN`
